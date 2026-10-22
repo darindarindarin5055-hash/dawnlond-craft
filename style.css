@@ -1,0 +1,92 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: #0f0f1a;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(15,15,26,0.95);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #2a2a3d;
+}
+.logo { font-size: 22px; font-weight: 900; color: #ffb347; }
+.logo span { color: #fff; }
+.nav-links { display: flex; gap: 25px; list-style: none; }
+.nav-links a { color: #ccc; text-decoration: none; font-weight: 700; transition: 0.3s; }
+.nav-links a:hover { color: #ffb347; }
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f0f1a);
+}
+.hero h1 { font-size: 44px; margin-bottom: 15px; }
+.hero h1 span { color: #ffb347; }
+.hero p { font-size: 18px; color: #aaa; margin-bottom: 30px; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #ffb347;
+  color: #0f0f1a;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.btn:hover { background: #ff9500; transform: translateY(-3px); }
+.btn.small { padding: 10px 20px; font-size: 14px; margin-top: 10px; }
+
+.section { padding: 60px 40px; text-align: center; }
+.section.alt { background: #14141f; }
+.section h2 { font-size: 32px; margin-bottom: 35px; color: #ffb347; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #1e1e2f;
+  border: 1px solid #2a2a3d;
+  border-radius: 14px;
+  padding: 25px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #ffb347;
+  box-shadow: 0 10px 30px rgba(255,179,71,0.15);
+}
+.card-img { font-size: 50px; margin-bottom: 12px; }
+.card h3 { font-size: 20px; margin-bottom: 8px; color: #fff; }
+.card p { color: #aaa; font-size: 14px; margin-bottom: 10px; }
+.meta { font-size: 12px; color: #777; margin-bottom: 5px; }
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: #0a0a12;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #2a2a3d;
+}
+
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; gap: 15px; padding: 15px; }
+  .nav-links { flex-wrap: wrap; justify-content: center; gap: 15px; }
+  .hero h1 { font-size: 28px; }
+  .section { padding: 40px 20px; }
+    }
